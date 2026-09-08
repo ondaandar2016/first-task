@@ -31,7 +31,27 @@ def make_phone(raw):
 ```
 ## Исправленный код
 ```py
-
+def make_phone(raw):
+    try:
+        text = str(raw)
+        
+        if not text.isdigit():
+            print("ошибка: номер должен содержать только цифры!")
+            return None
+        number = "+" + text
+        if len(number) > 12:
+            print("ошибка: номер слишком длинный!")
+            return None
+        if len(number) < 11:
+            print("ошибка: номер слишком короткий!")
+            return None
+        return number
+    except Exception as e:
+        print(f"ошибка: {e}")
+        return None
+    finally:
+        print("проверка номера завершена")
+print(make_phone("5559993245"))
 ```
 ## Роли
 Программист: Игошин Е.А.
