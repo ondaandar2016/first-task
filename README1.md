@@ -29,6 +29,7 @@ def is_strong(password):
         return True
     else:
         return False
+print(is_strong("password"))
 ```
 
 ## Роли
