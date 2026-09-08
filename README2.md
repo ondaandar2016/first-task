@@ -25,9 +25,11 @@ def final_price(price):
 ```py
 def final_price(price):
     if price >= 1000:
-        return price - 10
+        return (price - price * 10 / 100) 
     else:
         return price
+
+print(final_price(price=int(input())))
 ```
 
 ## Роли
