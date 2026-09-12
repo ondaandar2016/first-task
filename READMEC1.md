@@ -75,6 +75,7 @@ while True:
 |            |Команда: шаг          |	
 |            |Сел                   |
 
+## Правильный код
 ```py
 energy = 10
 while True:
